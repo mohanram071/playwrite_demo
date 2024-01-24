@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Suite" parallel="tests" >
+<listeners>
+    <listener class-name="com.qa.framework.listeners.ExtentReportListener" >
+        <listener class-name="com.qa.test.listner.RetryAnalyzerListner"></listener>
+
+    </listener>
+</listeners>
+    <test name="CureMdTest" parallel="methods" thread-count="5">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+                <class name="com.qa.test.tests.LoginTest">
+                </class>
+        </classes>
+
+    </test>
+
+</suite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Taxwallet Performance test suite" thread-count="2"
+	parallel="tests" verbose="4">
+
+	<listeners>
+		<listener class-name="com.qa.framework.listeners.ExtentReportListener" />
+
+
+<!--		<listener class-name="com.qa.test.listner.RetryAnalyzerListner" />-->
+	</listeners>
+
+	<test name="LoanofficerTest">
+		<classes>
+<!--			<class name="com.qa.test.tests.OperationManagerRoleTest" />-->
+			<class name="com.qa.test.tests.OperationManagerRoleTest"></class>
+		</classes>
+	</test>
+
+
+
+</suite>
